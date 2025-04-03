@@ -9,7 +9,7 @@
         div {
             background: rgb(156, 212, 205);
             width: 200px;
-            height: 200px;
+            height: 500px;
             border: 2px solid #11dce6;
             padding: 20px;
             margin: 20px;
@@ -17,22 +17,46 @@
             box-shadow: 10px 10px 5px hsl(241, 73%, 68%);
         }
 
-        #two {
+        #one {
             background: rgb(156, 212, 205) borer-radius: 50px;
 
+        }
+
+        #two{
+            background-color: aquamarine;
+            position:relative;
+            left: 100px;
+            top: -100;
+        }
+
+        #three{
+            background-color: antiquewhite;
+            position:absolute;
+            left: 300px
+        }
+
+        #four {
+            background-color: aliceblue;
+            position: fixed;
+            right: 0;
+            bottom:0;
+
+        }
+
+        #five {
+            background-color: floralwhite;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
     </style>
 </head>
 
 <body>
-
-    <div id="one">
-        <p>Box #1 Text</p>
-    </div>
-
-    <div id="two"><p>Box #2 Text</p></div>
-    <div id="three"><p>Box #3 Text</p></div>
-    <div id="four"><p>Box #4 Text</p></div>
-</body>
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
+<div id="five"></div>
 
 </html>
