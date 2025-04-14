@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>grid demo</title>
+<style>
+.container {
+  display: grid; 
+  grid-template-columns: 0.6fr 1.8fr 0.6fr; 
+  grid-template-rows: 0.5fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header Header Header"
+    "Sideleft Main Sideright"
+    "footer footer footer"; 
+}
+.Header 
+{ grid-area: Header;background:pink;
+height: 1000px;} 
+
+.Sideleft
+ { grid-area: Sideleft; background: pink;} 
+
+.Main
+ { grid-area: Main;background-color: antiquewhite;}
+
+.Sideright
+ { grid-area: Sideright;background-color: greenyellow;}
+
+.footer
+ { grid-area: footer; background-color: aqua;} 
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Header"> <h2>ffff</h2></div>
+        
+        <div class="Sideleft"><h2>Sidebar</h2></div>
+        
+        <div class="Main"> <h2>hello</h2></div>
+       
+        <div class="Sideright"> <h2>hi</h2></div>
+        
+        <div class="footer"><h2>hi</h2></div>
+        
+      </div>
+ </body>
+
+</html>

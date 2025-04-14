@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>float demo</title>
+<style>
+.right {
+    float: right;
+    margin-left:20px;
+    margin-bottom: 20px;
+}
+.right::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+.left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.left::after [
+    content:"";
+    clear: both;
+    display: table;
+]
+</style>
+</head>
+
+
+<body>
+   <img class="right" src="pineapple.jpg" alt="spongebob's house"/>
+   <h2>Pineapples</h2>
+   <p>yummy</p>
+   <p>tasty</p>
+   <p>sweet</p>
+
+    <img class="left" src="pineapple.jpg" alt="spongebob's house"/>
+    <h2>Pineapples</h2>
+    <p>yummy</p>
+    <p>tasty</p>
+    <p>sweet</p>
+ </body>
+</html>
